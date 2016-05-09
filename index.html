@@ -27,8 +27,8 @@
 
 	<body ng-controller="mainController" style="background: #000;">
 		<div layout="row" layout-wrap> 	
-			<div ng-repeat="subject in subjects track by $index" flex-gt-sm="20" flex="33">
-				<img ng-src="{{getSource(subject)}}" ng-mouseenter="subject.active = true;" ng-mouseleave="subject.active = false;">
+			<div ng-repeat="subject in subjects track by $index" flex-gt-sm="25" flex="50">
+				<img ng-src="{{getSource(subject)}}" ng-mouseenter="subject.active = true;" ng-mouseleave="subject.active = false;" alt="{{subject.name}}">
 			</div>
 		</div>
 	</body>
